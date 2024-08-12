@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUPALLE SAI RUPA - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background-color: #ff5733;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+        nav button {
+            background-color: #ff5733;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        nav button:hover {
+            background-color: #ff704d;
+        }
+        .container {
+            display: flex;
+            padding: 20px;
+        }
+        .photo-column {
+            flex: 1;
+            text-align: center;
+            margin-right: 20px;
+        }
+        .photo-column img {
+            width: 80%;
+            border-radius: 15px;
+            border: 5px solid #ff5733;
+        }
+        .content-column {
+            flex: 2;
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .section-title {
+            font-size: 24px;
+            color: #ff5733;
+            margin-bottom: 10px;
+        }
+        .content-column p {
+            line-height: 1.6;
+        }
+        .content-column h3 {
+            margin-top: 20px;
+            color: #333;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>JUPALLE SAI RUPA</h1>
+        <p>Motivated Computer Science Student</p>
+    </header>
+
+    <nav>
+        <button onclick="scrollToSection('about')">About Me</button>
+        <button onclick="scrollToSection('skills')">Skills</button>
+        <button onclick="scrollToSection('projects')">Projects</button>
+        <button onclick="scrollToSection('certifications')">Certifications</button>
+        <button onclick="scrollToSection('achievements')">Achievements</button>
+        <button onclick="scrollToSection('hobbies')">Hobbies</button>
+    </nav>
+
+    <div class="container">
+        <div class="photo-column">
+            <img src="your-photo.jpg" alt="Jupalle Sai Rupa">
+        </div>
+        <div class="content-column">
+            <section id="about">
+                <h2 class="section-title">About Me</h2>
+                <p>I am JUPALLE SAI RUPA, a motivated Computer Science student excelling in C, HTML, and CSS, and proficient in Javascript and SQL. I have demonstrated leadership in academic projects and competitions, coupled with strong communication and time management skills. I am eager to bring a blend of technical expertise and innovative thinking to dynamic teams in the tech industry.</p>
+            </section>
+
+            <section id="skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li>C</li>
+                    
+                    <li>Javascript</li>
+                    <li>Python</li>
+                    <li>HTML, CSS</li>
+                    <li>SQL</li>
+                    <li>Data Structures</li>
+                </ul>
+            </section>
+
+            <section id="projects">
+                <h3>Projects</h3>
+                <ul>
+                    <li><strong>Count Program</strong> </li>
+                    <li><strong>Calculator:</strong> Developed a command-line based Javascript calculator to perform basic arithmetic operations such as addition, subtraction, multiplication, and division.</li>
+                    <li><strong>Chatbot:</strong> Showcases AI techniques for automated conversation handling.</li>
+                </ul>
+            </section>
+
+            <section id="certifications">
+                <h3>Certifications</h3>
+                <ul>
+                    <li>Learn Java - Certified by IBM SkillsBuilder</li>
+                    <li>Cyber Security - Certified by PALOALTO</li>
+                    <li>AI-ML - Certified by AWS</li>
+                </ul>
+            </section>
+
+            <section id="achievements">
+                <h3>Achievements</h3>
+                <p>Participated in various workshops, paper presentations, poster presentations, coding competitions, and hackathons conducted by my college.</p>
+            </section>
+
+            <section id="hobbies">
+                <h3>Hobbies</h3>
+                <p> Listening to music, Watching Fictional Movies</p>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Jupalle Sai Rupa | <a href="https://linkedin.com/in/lahari-bodicherla-166335280" style="color:white;">LinkedIn</a></p>
+    </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
